@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <preference for="Codealist\EntityModelRepository\Api\MyEntityRepositoryInterface" type="Codealist\EntityModelRepository\Model\MyEntityRepository" />
+    <preference for="Codealist\EntityModelRepository\Api\Data\MyEntityInterface" type="Codealist\EntityModelRepository\Model\MyEntity" />
+    <preference for="Codealist\EntityModelRepository\Api\Data\MyEntitySearchResultInterface" type="Codealist\EntityModelRepository\Model\MyEntitySearchResult" />
+</config>
