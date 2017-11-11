@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Webapi:etc/webapi.xsd">
+    <route url="/V1/codealist_myentity/:id" method="GET">
+        <service class="Codealist\EntityModelRepository\Api\MyEntityRepositoryInterface" method="getById"/>
+        <resources>
+            <resource ref="anonymous"/>
+        </resources>
+    </route>
+    <route method="GET" url="/V1/codealist_myentity">
+        <service class="Codealist\EntityModelRepository\Api\MyEntityRepositoryInterface" method="getList"/>
+        <resources>
+            <resource ref="anonymous" />
+        </resources>
+    </route>
+    <route method="POST" url="/V1/codealist_myentity">
+        <service class="Codealist\EntityModelRepository\Api\MyEntityRepositoryInterface" method="save"/>
+        <resources>
+            <resource ref="anonymous" />
+        </resources>
+    </route>
+    <route method="PUT" url="/V1/codealist_myentity">
+        <service class="Codealist\EntityModelRepository\Api\MyEntityRepositoryInterface" method="save"/>
+        <resources>
+            <resource ref="anonymous" />
+        </resources>
+    </route>
+    <route method="DELETE" url="/V1/codealist_myentity">
+        <service class="Codealist\EntityModelRepository\Api\MyEntityRepositoryInterface" method="delete"/>
+        <resources>
+            <resource ref="anonymous" />
+        </resources>
+    </route>
+    <route method="DELETE" url="/V1/codealist_myentity/:id">
+        <service class="Codealist\EntityModelRepository\Api\MyEntityRepositoryInterface" method="deleteById"/>
+        <resources>
+            <resource ref="anonymous" />
+        </resources>
+    </route>
+</routes>
